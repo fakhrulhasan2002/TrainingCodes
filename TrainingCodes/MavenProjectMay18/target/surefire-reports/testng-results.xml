@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="112852" started-at="2018-05-13T19:05:42Z" finished-at="2018-05-13T19:07:35Z">
+    <groups>
+      <group name="sanity">
+        <method signature="TestCaseOne.getpasswordreset()[pri:2, instance:com.test.TestCaseOne@60addb54]" name="getpasswordreset" class="com.test.TestCaseOne"/>
+        <method signature="TestCaseTwo.getpasswordreset_2()[pri:3, instance:com.test.TestCaseTwo@3f2a3a5]" name="getpasswordreset_2" class="com.test.TestCaseTwo"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="Test" duration-ms="112852" started-at="2018-05-13T19:05:42Z" finished-at="2018-05-13T19:07:35Z">
+      <class name="com.test.TestCaseOne">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test.TestCaseOne@60addb54]" name="beforeMethod" is-config="true" duration-ms="66515" started-at="2018-05-13T15:05:42Z" finished-at="2018-05-13T15:06:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="getpasswordreset()[pri:2, instance:com.test.TestCaseOne@60addb54]" name="getpasswordreset" duration-ms="5559" started-at="2018-05-13T15:06:49Z" description="This is Test 1" finished-at="2018-05-13T15:06:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getpasswordreset -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test.TestCaseOne@60addb54]" name="afterMethod" is-config="true" duration-ms="4591" started-at="2018-05-13T15:06:55Z" finished-at="2018-05-13T15:06:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.test.TestCaseOne -->
+      <class name="com.test.TestCaseTwo">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.test.TestCaseTwo@3f2a3a5]" name="beforeClass" is-config="true" duration-ms="21226" started-at="2018-05-13T15:06:59Z" finished-at="2018-05-13T15:07:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="getpasswordreset_2()[pri:3, instance:com.test.TestCaseTwo@3f2a3a5]" name="getpasswordreset_2" duration-ms="8028" started-at="2018-05-13T15:07:20Z" description="2 This is Test 1" finished-at="2018-05-13T15:07:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getpasswordreset_2 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.test.TestCaseTwo@3f2a3a5]" name="afterClass" is-config="true" duration-ms="6883" started-at="2018-05-13T15:07:28Z" finished-at="2018-05-13T15:07:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.test.TestCaseTwo -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

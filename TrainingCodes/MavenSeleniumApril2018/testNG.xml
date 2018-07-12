@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+      <class name="com.learning.NewTest"/>
+         <method>
+             <parameter name="username" value="invalideusername@gmail.com"/>
+             <parameter name="password" value="sdfvsd5" />
+      	</method>
+         
+      <class name="com.learning.NewTestTwo"/>
+      <method>
+             <parameter name="username2" value="invalideusernameT2@gmail.com"/>
+             <parameter name="password2" value="sdfvsd5" />
+      	</method>
+      <class name="com.learning.NewTestThree"/>
+      <method>
+             <parameter name="username3" value="invalideusernameT3@gmail.com"/>
+             <parameter name="password3" value="sdfvsd5" />
+      	</method>
+    </classes> 
+    <!-- <packages>
+    		<package name="com.learning"/>
+    </packages> -->
+    
+    <groups>
+     <run>
+       <exclude name="sanity"/>
+       <include name="Regression"/>
+       <!-- <exclude name="broken"/> -->
+     </run>
+    </groups>
+    
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

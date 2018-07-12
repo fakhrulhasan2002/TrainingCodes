@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+     <classes>
+      <class name="com.test.TestCaseOne"/>
+      <method>
+         <parameter name="username" value="testusername" />
+         <paramerer name="password" value="testpassword" />
+      </method>
+      <class name="com.test.TestCaseTwo"/>
+    </classes>
+    <!-- <packages>
+      <package name="testNGSession"/>
+    </packages> -->
+    <groups>
+      <run>
+          <include name="sanity"/>
+          <exclude name="Regression"/>
+      </run>
+    </groups>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

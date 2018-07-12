@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <parameter name="pass" value="sdferfae"/>
+  <parameter name="extra" value="200"/>
+  <parameter name="name" value="parameterpassing@gmail.com"/>
+  <test name="Test(failed)">
+    <parameter name="pass" value="sdferfae"/>
+    <parameter name="extra" value="200"/>
+    <parameter name="name" value="parameterpassing@gmail.com"/>
+    <groups>
+      <run>
+        <include name="Regression"/>
+        <include name="Functional"/>
+        <exclude name="Sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="MavenProject.MavaneProjectFeb2018.TestCaseTwo">
+        <methods>
+          <include name="testcaseNine"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- MavenProject.MavaneProjectFeb2018.TestCaseTwo -->
+      <class name="MavenProject.MavaneProjectFeb2018.TestCaseThree">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="testcaseFive" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- MavenProject.MavaneProjectFeb2018.TestCaseThree -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

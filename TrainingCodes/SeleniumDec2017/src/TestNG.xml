@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+      <class name="TestNGSession.TestNGSessionOne"/>
+      <class name="TestNGSession.TestNGSessionTwo"/>
+      <methods>
+        <method name="testcase013">
+           <parameter name="name" value="ASVG" />
+           <parameter name="age" value="15" />
+        </method>
+      </methods>
+    </classes>
+    <!-- <packages>
+      <package name="TestNGSession"/>
+    </packages> -->
+    <groups>
+      <run>
+         <exclude name= "smoke"/> 
+        <exclude name= "sanity"/>
+         <include name= "Regression"/> 
+         </run>
+    </groups>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

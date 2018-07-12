@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="password" value="sdfvsd5"/>
+  <parameter name="password3" value="sdfvsd5"/>
+  <parameter name="password2" value="sdfvsd5"/>
+  <parameter name="username3" value="invalideusernameT3@gmail.com"/>
+  <parameter name="username2" value="invalideusernameT2@gmail.com"/>
+  <parameter name="username" value="invalideusername@gmail.com"/>
+  <test name="Test(failed)">
+    <parameter name="password" value="sdfvsd5"/>
+    <parameter name="password3" value="sdfvsd5"/>
+    <parameter name="password2" value="sdfvsd5"/>
+    <parameter name="username3" value="invalideusernameT3@gmail.com"/>
+    <parameter name="username2" value="invalideusernameT2@gmail.com"/>
+    <parameter name="username" value="invalideusername@gmail.com"/>
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestNGPackage.NewTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- TestNGPackage.NewTest -->
+      <class name="TestNGPackage.NewTestTwo">
+        <methods>
+          <include name="verifyForgotAccountLinkTwo"/>
+        </methods>
+      </class> <!-- TestNGPackage.NewTestTwo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

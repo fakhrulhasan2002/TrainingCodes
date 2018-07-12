@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="pass" value="asdva"/>
+  <parameter name="email" value="asfareg@gmail"/>
+  <test name="Test(failed)">
+    <parameter name="pass" value="asdva"/>
+    <parameter name="email" value="asfareg@gmail"/>
+    <groups>
+      <run>
+        <include name="all"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestNGPackage.TestCaseOne">
+        <methods>
+          <include name="funtionTwo" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="funtionThree"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- TestNGPackage.TestCaseOne -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

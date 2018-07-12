@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+      <class name="learning.maven.MavenMarch12018.TestCaseTwo"/>
+        <method>
+          <parameter name="email" value="asfareg@gmail"/>
+          <parameter name="pass" value="asdva"/>
+        </method>
+     <class name="learning.maven.MavenMarch12018.TestCaseOne"/>
+      <class name="learning.maven.MavenMarch12018.TestCaseThree"/>
+    </classes> 
+    <!-- <packages>
+    	<package name="TestNGPackage"/>
+    </packages> -->
+    <groups>
+    <define  name="all">
+     
+    	 <exclude name="sanity"/>
+    	 <exclude name="Regression"/>
+    	 <include name="functional"/>
+    	
+    </define>
+    <run>
+    	<include name="all"/>
+    </run>
+    	
+    </groups>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

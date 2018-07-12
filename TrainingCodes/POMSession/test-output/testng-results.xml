@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="74162" started-at="2017-11-04T18:01:10Z" finished-at="2017-11-04T18:02:24Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="74162" started-at="2017-11-04T18:01:10Z" finished-at="2017-11-04T18:02:24Z">
+      <class name="test.TestCase1">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.TestCase1@4cc0edeb]" name="beforeTest" is-config="true" duration-ms="58146" started-at="2017-11-04T14:01:10Z" finished-at="2017-11-04T14:02:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="TC001()[pri:1, instance:test.TestCase1@4cc0edeb]" name="TC001" duration-ms="2831" started-at="2017-11-04T14:02:09Z" finished-at="2017-11-04T14:02:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001 -->
+        <test-method status="PASS" signature="TC002()[pri:2, instance:test.TestCase1@4cc0edeb]" name="TC002" duration-ms="4802" started-at="2017-11-04T14:02:12Z" finished-at="2017-11-04T14:02:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002 -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.TestCase1@4cc0edeb]" name="afterTest" is-config="true" duration-ms="8039" started-at="2017-11-04T14:02:16Z" finished-at="2017-11-04T14:02:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- test.TestCase1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

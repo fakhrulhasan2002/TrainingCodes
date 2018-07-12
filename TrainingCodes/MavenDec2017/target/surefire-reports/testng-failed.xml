@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <parameter name="name" value="ASVG"/>
+  <parameter name="age" value="15"/>
+  <test name="Test">
+    <parameter name="name" value="ASVG"/>
+    <parameter name="age" value="15"/>
+    <groups>
+      <run>
+        <include name="Regression"/>
+        <exclude name="smoke"/>
+        <exclude name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="MavenProject.MavenDec2017.TestNGSessionOne"/>
+      <class name="MavenProject.MavenDec2017.TestNGSessionTwo"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <parameter name="name" value="ASVG"/>
+    <parameter name="age" value="15"/>
+    <groups>
+      <run>
+        <include name="Regression"/>
+        <exclude name="smoke"/>
+        <exclude name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="MavenProject.MavenDec2017.TestNGSessionTwo">
+        <methods>
+          <include name="testcase011"/>
+          <include name="testcase012"/>
+        </methods>
+      </class> <!-- MavenProject.MavenDec2017.TestNGSessionTwo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

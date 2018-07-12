@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="pass" value="sdferfae"/>
+  <parameter name="name" value="parameterpassing@gmail.com"/>
+  <test name="Test(failed)">
+    <parameter name="pass" value="sdferfae"/>
+    <parameter name="name" value="parameterpassing@gmail.com"/>
+    <groups>
+      <run>
+        <include name="Regression"/>
+        <include name="Functional"/>
+        <exclude name="Sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestNGPackage.TestCaseThree">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="testcaseFive" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- TestNGPackage.TestCaseThree -->
+      <class name="TestNGPackage.TestCaseTwo">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- TestNGPackage.TestCaseTwo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

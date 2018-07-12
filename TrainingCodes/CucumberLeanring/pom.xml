@@ -1,0 +1,312 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>MavenProjectCucumber</groupId>
+  <artifactId>CucumberLeanring</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <!-- <packaging>jar</packaging> -->
+
+  <name>CucumberLeanring</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
+        <maven.compile.encoding>UTF-8</maven.compile.encoding> -->
+        <powermock.version>1.7.0</powermock.version>
+        <test.integration.pattern>**/*Test*.java</test.integration.pattern>
+  </properties>
+
+  <dependencies>
+<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+<dependency>
+    <groupId>net.masterthought</groupId>
+    <artifactId>cucumber-reporting</artifactId>
+    <version>3.8.0</version>
+</dependency>
+<!-- 
+ <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>1.7</version>
+        </dependency>
+        <dependency>
+            <groupId>velocity-tools</groupId>
+            <artifactId>velocity-tools</artifactId>
+            <version>1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.9.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.7</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>net.lingala.zip4j</groupId>
+            <artifactId>zip4j</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.11.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.owasp-java-html-sanitizer</groupId>
+            <artifactId>owasp-java-html-sanitizer</artifactId>
+            <version>20180219.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>20.0</version>
+        </dependency>
+   -->
+    <!-- https://mvnrepository.com/artifact/junit/junit -->
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.11</version>
+    <scope>test</scope>
+</dependency>
+ <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm -->
+<!--<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-jvm</artifactId>
+    <version>2.3.1</version>
+    <type>pom</type>
+</dependency> -->
+
+    <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>1.2.4</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.github.mkolisnyk/cucumber-runner -->
+<dependency>
+    <groupId>com.github.mkolisnyk</groupId>
+    <artifactId>cucumber-runner</artifactId>
+    <version>1.3.3</version>
+</dependency>
+<dependency>
+ <groupId>com.github.mkolisnyk</groupId>
+ <artifactId>cucumber-reports</artifactId>
+ <version>0.0.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.github.mkolisnyk/cucumber-report-generator -->
+<dependency>
+    <groupId>com.github.mkolisnyk</groupId>
+    <artifactId>cucumber-report-generator</artifactId>
+    <version>1.3.3</version>
+</dependency>
+
+    <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-core -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-core</artifactId>
+    <version>1.2.4</version>
+</dependency>
+    <!-- https://mvnrepository.com/artifact/info.cukes/gherkin -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>gherkin</artifactId>
+    <version>2.12.2</version>
+    <scope>provided</scope>
+</dependency>
+    <!-- https://mvnrepository.com/artifact/info.cukes/gherkin-jvm-deps -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>gherkin-jvm-deps</artifactId>
+    <version>1.0.3</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core -->
+<dependency>
+    <groupId>org.hamcrest</groupId>
+    <artifactId>hamcrest-core</artifactId>
+    <version>1.3</version>
+    <scope>test</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
+<dependency>
+    <groupId>org.mockito</groupId>
+    <artifactId>mockito-all</artifactId>
+    <version>1.9.5</version>
+    <scope>test</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-jvm-deps -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-jvm-deps</artifactId>
+    <version>1.0.5</version>
+    <scope>provided</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-html -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-html</artifactId>
+    <version>0.2.3</version>
+</dependency>
+
+        <dependency>
+            <groupId>org.jmockit</groupId>
+            <artifactId>jmockit</artifactId>
+            <version>1.33</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-api-mockito</artifactId>
+            <version>${powermock.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-module-junit4</artifactId>
+            <version>${powermock.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>2.8.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-configuration</groupId>
+            <artifactId>commons-configuration</artifactId>
+            <version>1.10</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-junit -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>1.2.4</version>
+    <scope>test</scope>
+</dependency>
+    </dependencies>
+
+
+<!-- <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.5.1</version>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+                <executable>C:\Program Files\Java\jdk1.8.0_131\bin\javac</executable>
+            </configuration>
+        </plugin>        
+        <plugin>
+				<groupId>net.masterthought</groupId>
+				   <artifactId>maven-cucumber-reporting</artifactId>
+				        <version>2.0.0</version>
+				        <executions>
+				          <execution>
+				            <id>execution</id>
+				            <phase>test</phase>
+				            <goals>
+				              <goal>generate</goal>
+				            </goals>
+				            <configuration>
+				              <projectName>CucumberLearning</projectName>
+				              <outputDirectory>${project.build.directory}/site/cucumber-reports-advanced</outputDirectory>
+				              <cucumberOutput>${project.build.directory}/cucumber/cucumber.json</cucumberOutput>
+				              <skippedFails>true</skippedFails>
+				              <enableFlashCharts>false</enableFlashCharts>
+				              <buildNumber>885</buildNumber>
+				            </configuration>
+				          </execution>
+				        </executions>
+				      </plugin>		
+    </plugins>
+</build> -->
+
+<profiles>
+		<profile>
+			<id>simple_profile_id</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>2.18.1</version>
+						<configuration>
+						    <testFailureIgnore>true</testFailureIgnore>
+							<includes>
+								<include>**/TestRunners.java</include>
+							</includes>
+						</configuration>
+					</plugin>
+
+					<plugin>
+				        <groupId>net.masterthought</groupId>
+				        <artifactId>maven-cucumber-reporting</artifactId>
+				        <version>2.0.0</version>
+				        <executions>
+				          <execution>
+				            <id>execution</id>
+				            <phase>verify</phase>
+				            <goals>
+				              <goal>generate</goal>
+				            </goals>
+				            <configuration>
+				              <projectName>CucumberLearning</projectName>
+				              <outputDirectory>${project.build.directory}/site/cucumber-reports-advanced</outputDirectory>
+				              <cucumberOutput>${project.build.directory}/cucumber-json-report.json</cucumberOutput>
+				              <!-- <cucumberOutput>${project.build.directory}/cucumber/cucumber.json</cucumberOutput>
+				               -->
+				              <skippedFails>true</skippedFails>
+				              <enableFlashCharts>true</enableFlashCharts>
+				              <buildNumber>1</buildNumber>
+				              <checkBuildResult>false</checkBuildResult>
+				              <jsonfiles>
+				              	<!-- <param>/target/cucumber/cucumber.json</param> -->
+				              	<param>/cucumber-json-report.json</param>
+				              </jsonfiles>
+				            </configuration>
+				          </execution>
+				        </executions>
+				      </plugin>	
+				      <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.5.1</version>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+                <encoding>UTF-8</encoding>
+                <executable>C:\Program Files\Java\jdk1.8.0_131\bin\javac</executable>
+            </configuration>
+        </plugin> 				
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="TestOne(failed)">
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="platform" value="Windows"/>
+    <parameter name="url" value="http://www.google.com"/>
+    <classes>
+      <class name="com.gridsel.SecondCase">
+        <methods>
+          <include name="f2"/>
+          <include name="beforeClass"/>
+          <include name="f1"/>
+          <include name="f4"/>
+          <include name="f3"/>
+        </methods>
+      </class> <!-- com.gridsel.SecondCase -->
+    </classes>
+  </test> <!-- TestOne(failed) -->
+</suite> <!-- Failed suite [Suite] -->

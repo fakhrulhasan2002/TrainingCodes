@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 2.576 sec <<< FAILURE! - in TestSuite
+testcase011(MavenProject.MavenDec2017.TestNGSessionTwo)  Time elapsed: 0.069 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at MavenProject.MavenDec2017.TestNGSessionTwo.testcase011(TestNGSessionTwo.java:19)
+

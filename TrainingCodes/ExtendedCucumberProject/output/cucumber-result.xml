@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.092834">
+<testcase classname="Login Action" name="Successful Login with Valid Credentials" time="0.092573">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:64)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:74)&#13;&#10;&#9;at stepDefinition.Test_Case.user_Navigate_to_LogInPage(Test_Case.java:25)&#13;&#10;&#9;at ✽.When User Navigate to LogInPage(Feature/LogIn_Test.feature:6)&#13;&#10;"><![CDATA[Given User is on Home Page..................................................passed
+When User Navigate to LogInPage.............................................failed
+And User enters UserName and Password.......................................skipped
+Then Message displayed Login Successfully...................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
+	at stepDefinition.Test_Case.user_Navigate_to_LogInPage(Test_Case.java:25)
+	at ✽.When User Navigate to LogInPage(Feature/LogIn_Test.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="Login Action" name="Successful LogOut" time="0.000261">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:64)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:74)&#13;&#10;&#9;at stepDefinition.Test_Case.message_displayed_LogOut_Successfully(Test_Case.java:49)&#13;&#10;&#9;at ✽.Then Message displayed LogOut Successfully(Feature/LogIn_Test.feature:12)&#13;&#10;"><![CDATA[When User LogOut from the Application.......................................passed
+Then Message displayed LogOut Successfully..................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
+	at stepDefinition.Test_Case.message_displayed_LogOut_Successfully(Test_Case.java:49)
+	at ✽.Then Message displayed LogOut Successfully(Feature/LogIn_Test.feature:12)
+]]></failure>
+</testcase>
+</testsuite>

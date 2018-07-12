@@ -1,0 +1,11 @@
+Feature: Login Action
+
+  Scenario: Successful Login with Valid Credentials [90m# Feature/LogIn_Test.feature:3[0m
+    [33mGiven [0m[33mUser is on Home Page[0m
+    [33mWhen [0m[33mUser Navigate to LogInPage[0m
+    [33mAnd [0m[33mUser enters UserName and Password[0m
+    [33mThen [0m[33mMessage displayed Login Successfully[0m
+
+  Scenario: Successful LogOut                  [90m# Feature/LogIn_Test.feature:9[0m
+    [33mWhen [0m[33mUser LogOut from the Application[0m
+    [33mThen [0m[33mMessage displayed LogOut Successfully[0m

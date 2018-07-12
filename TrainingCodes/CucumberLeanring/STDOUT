@@ -1,0 +1,38 @@
+@tag1
+Feature: Google Action
+
+  @tag2
+  Scenario: Open Google Page   [90m# Google.feature:4[0m
+    [32mGiven [0m[32mUser is on Home Page[0m [90m# Test_Case.user_is_on_Home_Page()[0m
+    [32mWhen [0m[32mOpen google page[0m      [90m# Google.open_google_page()[0m
+    [32mThen [0m[32mgoogle page opens[0m     [90m# Google.google_page_opens()[0m
+@tag1
+Feature: Login Action
+
+  @tag2
+  Scenario: Successful Login with Valid Credentials [90m# LogIn_Test.feature:4[0m
+    [32mGiven [0m[32mUser is on Home Page[0m                      [90m# Test_Case.user_is_on_Home_Page()[0m
+    [31mWhen [0m[31mUser Navigate to LogInPage[0m                 [90m# Test_Case.user_Navigate_to_LogInPage()[0m
+      [31mjava.lang.AssertionError
+      	at org.junit.Assert.fail(Assert.java:86)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertFalse(Assert.java:64)
+      	at org.junit.Assert.assertFalse(Assert.java:74)
+      	at stepDefinition.Test_Case.user_Navigate_to_LogInPage(Test_Case.java:25)
+      	at ✽.When User Navigate to LogInPage(LogIn_Test.feature:6)
+      [0m
+    [36mAnd [0m[36mUser enters UserName and Password[0m           [90m# Test_Case.user_enters_UserName_and_Password()[0m
+    [36mThen [0m[36mMessage displayed Login Successfully[0m       [90m# Test_Case.message_displayed_Login_Successfully()[0m
+
+  @tag3
+  Scenario: Successful LogOut                  [90m# LogIn_Test.feature:10[0m
+    [32mWhen [0m[32mUser LogOut from the Application[0m      [90m# Test_Case.user_LogOut_from_the_Application()[0m
+    [31mThen [0m[31mMessage displayed LogOut Successfully[0m [90m# Test_Case.message_displayed_LogOut_Successfully()[0m
+      [31mjava.lang.AssertionError
+      	at org.junit.Assert.fail(Assert.java:86)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertFalse(Assert.java:64)
+      	at org.junit.Assert.assertFalse(Assert.java:74)
+      	at stepDefinition.Test_Case.message_displayed_LogOut_Successfully(Test_Case.java:49)
+      	at ✽.Then Message displayed LogOut Successfully(LogIn_Test.feature:12)
+      [0m

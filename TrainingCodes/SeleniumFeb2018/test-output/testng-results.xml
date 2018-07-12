@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="73742" started-at="2018-02-24T18:37:06Z" finished-at="2018-02-24T18:38:20Z">
+    <groups>
+      <group name="Functional">
+        <method signature="TestCaseTwo.testcaseNine()[pri:1, instance:TestNGPackage.TestCaseTwo@224edc67]" name="testcaseNine" class="TestNGPackage.TestCaseTwo"/>
+      </group> <!-- Functional -->
+      <group name="Regression">
+        <method signature="TestCaseThree.testcaseFive(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:TestNGPackage.TestCaseThree@14acaea5]" name="testcaseFive" class="TestNGPackage.TestCaseThree"/>
+        <method signature="TestCaseThree.testcaseFour()[pri:1, instance:TestNGPackage.TestCaseThree@14acaea5]" name="testcaseFour" class="TestNGPackage.TestCaseThree"/>
+        <method signature="TestCaseTwo.testcaseNine()[pri:1, instance:TestNGPackage.TestCaseTwo@224edc67]" name="testcaseNine" class="TestNGPackage.TestCaseTwo"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test name="Test" duration-ms="73742" started-at="2018-02-24T18:37:06Z" finished-at="2018-02-24T18:38:20Z">
+      <class name="TestNGPackage.TestCaseTwo">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:TestNGPackage.TestCaseTwo@224edc67]" name="beforeClass" is-config="true" duration-ms="39" started-at="2018-02-24T13:37:06Z" finished-at="2018-02-24T13:37:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGPackage.TestCaseTwo@224edc67]" name="beforeMethod" is-config="true" duration-ms="25212" started-at="2018-02-24T13:37:06Z" finished-at="2018-02-24T13:37:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcaseNine()[pri:1, instance:TestNGPackage.TestCaseTwo@224edc67]" name="testcaseNine" duration-ms="101" started-at="2018-02-24T13:37:31Z" description="Title Verification" finished-at="2018-02-24T13:37:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcaseNine -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGPackage.TestCaseTwo@224edc67]" name="afterMethod" is-config="true" duration-ms="2702" started-at="2018-02-24T13:37:32Z" finished-at="2018-02-24T13:37:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestNGPackage.TestCaseTwo@224edc67]" name="afterClass" is-config="true" duration-ms="2" started-at="2018-02-24T13:37:34Z" finished-at="2018-02-24T13:37:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestNGPackage.TestCaseTwo -->
+      <class name="TestNGPackage.TestCaseThree">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGPackage.TestCaseThree@14acaea5]" name="beforeMethod" is-config="true" duration-ms="18183" started-at="2018-02-24T13:37:34Z" finished-at="2018-02-24T13:37:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcaseFour()[pri:1, instance:TestNGPackage.TestCaseThree@14acaea5]" name="testcaseFour" duration-ms="45" started-at="2018-02-24T13:37:52Z" description="Title Verification" finished-at="2018-02-24T13:37:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcaseFour -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGPackage.TestCaseThree@14acaea5]" name="afterMethod" is-config="true" duration-ms="1184" started-at="2018-02-24T13:37:52Z" finished-at="2018-02-24T13:37:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGPackage.TestCaseThree@14acaea5]" name="beforeMethod" is-config="true" duration-ms="18224" started-at="2018-02-24T13:37:54Z" finished-at="2018-02-24T13:38:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcaseFive(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:TestNGPackage.TestCaseThree@14acaea5]" name="testcaseFive" duration-ms="6543" started-at="2018-02-24T13:38:12Z" description="Invalid Login Test" finished-at="2018-02-24T13:38:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parameterpassing@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdferfae]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Extra word]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcaseFive -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGPackage.TestCaseThree@14acaea5]" name="afterMethod" is-config="true" duration-ms="1419" started-at="2018-02-24T13:38:18Z" finished-at="2018-02-24T13:38:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TestNGPackage.TestCaseThree -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

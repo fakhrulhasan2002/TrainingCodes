@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="username" value="testusername"/>
+  <test name="Test(failed)">
+    <parameter name="username" value="testusername"/>
+    <groups>
+      <run>
+        <include name="sanity"/>
+        <exclude name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testNGSession.TestCaseOne">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="div"/>
+          <include name="getpasswordreset"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testNGSession.TestCaseOne -->
+      <class name="testNGSession.TestCaseTwo">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="getpasswordreset_2"/>
+        </methods>
+      </class> <!-- testNGSession.TestCaseTwo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

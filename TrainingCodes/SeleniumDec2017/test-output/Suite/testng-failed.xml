@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="name" value="ASVG"/>
+  <parameter name="age" value="15"/>
+  <test name="Test(failed)">
+    <parameter name="name" value="ASVG"/>
+    <parameter name="age" value="15"/>
+    <groups>
+      <run>
+        <include name="Regression"/>
+        <exclude name="smoke"/>
+        <exclude name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestNGSession.TestNGSessionTwo">
+        <methods>
+          <include name="testcase011"/>
+          <include name="testcase012"/>
+        </methods>
+      </class> <!-- TestNGSession.TestNGSessionTwo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

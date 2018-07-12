@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="121469" started-at="2018-04-29T16:25:51Z" finished-at="2018-04-29T16:27:53Z">
+    <groups>
+      <group name="Regression">
+        <method signature="NewTest.validLogin()[pri:3, instance:com.learning.NewTest@614c5515]" name="validLogin" class="com.learning.NewTest"/>
+        <method signature="NewTest.verifyForgotAccountLink()[pri:2, instance:com.learning.NewTest@614c5515]" name="verifyForgotAccountLink" class="com.learning.NewTest"/>
+        <method signature="NewTestThree.invalidloginTestThree(java.lang.String, java.lang.String)[pri:1, instance:com.learning.NewTestThree@2d554825]" name="invalidloginTestThree" class="com.learning.NewTestThree"/>
+        <method signature="NewTestTwo.invalidloginTestTwo(java.lang.String, java.lang.String)[pri:1, instance:com.learning.NewTestTwo@77b52d12]" name="invalidloginTestTwo" class="com.learning.NewTestTwo"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test name="Test" duration-ms="121469" started-at="2018-04-29T16:25:51Z" finished-at="2018-04-29T16:27:53Z">
+      <class name="com.learning.NewTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.learning.NewTest@614c5515]" name="beforeMethod" is-config="true" duration-ms="28424" started-at="2018-04-29T12:25:52Z" finished-at="2018-04-29T12:26:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyForgotAccountLink()[pri:2, instance:com.learning.NewTest@614c5515]" name="verifyForgotAccountLink" duration-ms="4740" started-at="2018-04-29T12:26:20Z" description="verify Forgot AccountLink" finished-at="2018-04-29T12:26:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotAccountLink -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.learning.NewTest@614c5515]" name="afterMethod" is-config="true" duration-ms="5572" started-at="2018-04-29T12:26:25Z" finished-at="2018-04-29T12:26:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.learning.NewTest@614c5515]" name="beforeMethod" is-config="true" duration-ms="23147" started-at="2018-04-29T12:26:30Z" finished-at="2018-04-29T12:26:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validLogin()[pri:3, instance:com.learning.NewTest@614c5515]" name="validLogin" duration-ms="3" started-at="2018-04-29T12:26:53Z" description="valid Login" finished-at="2018-04-29T12:26:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.learning.NewTest@614c5515]" name="afterMethod" is-config="true" duration-ms="3254" started-at="2018-04-29T12:26:53Z" finished-at="2018-04-29T12:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.learning.NewTest -->
+      <class name="com.learning.NewTestTwo">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.learning.NewTestTwo@77b52d12]" name="beforeMethod" is-config="true" duration-ms="17737" started-at="2018-04-29T12:26:57Z" finished-at="2018-04-29T12:27:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="invalidloginTestTwo(java.lang.String, java.lang.String)[pri:1, instance:com.learning.NewTestTwo@77b52d12]" name="invalidloginTestTwo" duration-ms="9970" started-at="2018-04-29T12:27:14Z" description="invalid  login Test" finished-at="2018-04-29T12:27:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalideusernameT2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdfvsd5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidloginTestTwo -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.learning.NewTestTwo@77b52d12]" name="afterMethod" is-config="true" duration-ms="1946" started-at="2018-04-29T12:27:24Z" finished-at="2018-04-29T12:27:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.learning.NewTestTwo -->
+      <class name="com.learning.NewTestThree">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.learning.NewTestThree@2d554825]" name="beforeMethod" is-config="true" duration-ms="17543" started-at="2018-04-29T12:27:26Z" finished-at="2018-04-29T12:27:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="invalidloginTestThree(java.lang.String, java.lang.String)[pri:1, instance:com.learning.NewTestThree@2d554825]" name="invalidloginTestThree" duration-ms="7694" started-at="2018-04-29T12:27:44Z" description="invalid  login Test" finished-at="2018-04-29T12:27:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalideusernameT3@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdfvsd5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidloginTestThree -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.learning.NewTestThree@2d554825]" name="afterMethod" is-config="true" duration-ms="1392" started-at="2018-04-29T12:27:52Z" finished-at="2018-04-29T12:27:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.learning.NewTestThree -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

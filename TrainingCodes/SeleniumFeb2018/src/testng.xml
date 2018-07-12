@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+      <class name="TestNGPackage.TestCaseOne"/>
+      <class name="TestNGPackage.TestCaseTwo"/>
+      <class name="TestNGPackage.TestCaseThree"/>
+      <methods>
+        <method name="testcaseFive">
+           <parameter name="name" value="parameterpassing@gmail.com" />
+           <parameter name="pass" value="sdferfae" />
+           <parameter name="extra" value="200" />
+           
+        </method>
+       </methods>
+   </classes>
+    <!-- <packages>
+      <package name="TestNGPackage"/>
+    </packages> -->
+    <groups>
+       <run>
+       <exclude name="Sanity"/>
+       <include name="Regression"/>
+       <include name="Functional"/>
+       </run>
+    </groups>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

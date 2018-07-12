@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <parameter name="pass" value="asdva"/>
+  <parameter name="email" value="asfareg@gmail"/>
+  <test name="Test(failed)">
+    <parameter name="pass" value="asdva"/>
+    <parameter name="email" value="asfareg@gmail"/>
+    <groups>
+      <run>
+        <include name="all"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="learning.maven.MavenMarch12018.TestCaseOne">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="funtionThree"/>
+          <include name="funtionTwo"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- learning.maven.MavenMarch12018.TestCaseOne -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

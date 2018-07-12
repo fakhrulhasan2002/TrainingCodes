@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="49087" started-at="2018-04-28T18:16:33Z" finished-at="2018-04-28T18:17:22Z">
+    <groups>
+      <group name="Regression">
+        <method signature="NewTest.invalidloginTest(java.lang.String, java.lang.String)[pri:1, instance:TestNGPackage.NewTest@c038203]" name="invalidloginTest" class="TestNGPackage.NewTest"/>
+        <method signature="NewTest.validLogin()[pri:3, instance:TestNGPackage.NewTest@c038203]" name="validLogin" class="TestNGPackage.NewTest"/>
+        <method signature="NewTest.verifyForgotAccountLink()[pri:2, instance:TestNGPackage.NewTest@c038203]" name="verifyForgotAccountLink" class="TestNGPackage.NewTest"/>
+      </group> <!-- Regression -->
+      <group name="sanity">
+        <method signature="NewTest.invalidloginTest(java.lang.String, java.lang.String)[pri:1, instance:TestNGPackage.NewTest@c038203]" name="invalidloginTest" class="TestNGPackage.NewTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="Default test" duration-ms="49087" started-at="2018-04-28T18:16:33Z" finished-at="2018-04-28T18:17:22Z">
+      <class name="TestNGPackage.NewTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:TestNGPackage.NewTest@c038203]" name="beforeSuite" is-config="true" duration-ms="31" started-at="2018-04-28T14:16:33Z" finished-at="2018-04-28T14:16:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestNGPackage.NewTest@c038203]" name="beforeTest" is-config="true" duration-ms="4" started-at="2018-04-28T14:16:33Z" finished-at="2018-04-28T14:16:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:TestNGPackage.NewTest@c038203]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-04-28T14:16:33Z" finished-at="2018-04-28T14:16:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="SKIP" signature="invalidloginTest(java.lang.String, java.lang.String)[pri:1, instance:TestNGPackage.NewTest@c038203]" name="invalidloginTest" duration-ms="0" started-at="2018-04-28T14:16:33Z" description="invalid  login Test" finished-at="2018-04-28T14:16:33Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'username' is required by @Test on method invalidloginTest but has not been marked @Optional or defined
+in C:\Users\Fakhrul\AppData\Local\Temp\testng-eclipse--317094368\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'username' is required by @Test on method invalidloginTest but has not been marked @Optional or defined
+in C:\Users\Fakhrul\AppData\Local\Temp\testng-eclipse--317094368\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidloginTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGPackage.NewTest@c038203]" name="beforeMethod" is-config="true" duration-ms="22279" started-at="2018-04-28T14:16:33Z" finished-at="2018-04-28T14:16:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyForgotAccountLink()[pri:2, instance:TestNGPackage.NewTest@c038203]" name="verifyForgotAccountLink" duration-ms="4492" started-at="2018-04-28T14:16:55Z" description="verify Forgot AccountLink" finished-at="2018-04-28T14:17:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotAccountLink -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGPackage.NewTest@c038203]" name="afterMethod" is-config="true" duration-ms="2908" started-at="2018-04-28T14:17:00Z" finished-at="2018-04-28T14:17:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGPackage.NewTest@c038203]" name="beforeMethod" is-config="true" duration-ms="18098" started-at="2018-04-28T14:17:03Z" finished-at="2018-04-28T14:17:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validLogin()[pri:3, instance:TestNGPackage.NewTest@c038203]" name="validLogin" duration-ms="4" started-at="2018-04-28T14:17:21Z" description="valid Login" finished-at="2018-04-28T14:17:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGPackage.NewTest@c038203]" name="afterMethod" is-config="true" duration-ms="1187" started-at="2018-04-28T14:17:21Z" finished-at="2018-04-28T14:17:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestNGPackage.NewTest@c038203]" name="afterClass" is-config="true" duration-ms="1" started-at="2018-04-28T14:17:22Z" finished-at="2018-04-28T14:17:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:TestNGPackage.NewTest@c038203]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-04-28T14:17:22Z" finished-at="2018-04-28T14:17:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:TestNGPackage.NewTest@c038203]" name="afterSuite" is-config="true" duration-ms="1" started-at="2018-04-28T14:17:22Z" finished-at="2018-04-28T14:17:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- TestNGPackage.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
